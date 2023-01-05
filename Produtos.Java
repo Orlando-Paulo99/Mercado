@@ -1,37 +1,31 @@
-import java.util.Scanner;
-import loja.Produtos;
+public class Produtos {
 
-public class Programa {
-
-  public static void main(String[] args) {
-    Scanner tec=new Scanner(System.in);
-    
-    Produtos p1=new Produtos();
-    
-    System.out.println("Nome do produto: ");
-    p1.produto=tec.next();
-    
-    System.out.println("Quantidade do produto");
-    p1.quantidade=tec.nextDouble();
-    
-    System.out.println("Insira o preço do produto ");
-    p1.preco=tec.nextDouble();
-     
-    System.out.println("O produto: "+p1.produto +"\nA quantidade: "+p1.quantidade+"\nO preço individual é: "+p1.preco);
-    
-    System.out.println("Acrescentou quantos produtos?");
-    int estoque=tec.nextInt();
-    p1.addProdutos(estoque);
-    System.out.println("Atualização:"+p1.produto+"\nEstoque atual:"+p1.quantidade+"\nPreço:"+p1.preco);
-    
-    
-    System.out.println("vendeu quantos produto?");
-    estoque=tec.nextInt();
-    p1.removerProdutos(estoque);
-    
-    System.out.println("Foram vendidos: "+estoque + p1.produto);
-    
-
-  }
+ public String produto;
+ public double quantidade;
+ public double preco;
+ private int cnpj;
+ 
+ public void addProdutos (int estoque){
+ 
+    this.quantidade+=estoque;
+ 
+   
+ }
+ 
+ public void removerProdutos(int estoque){
+   this.quantidade-=estoque;
+ }
+ 
+ public int getM_cnpj(){
+   return this.cnpj;
+ }
+ 
+ public void setIn_cnpj(int x){
+   this.cnpj=x;
+   
+ }
+ 
+ 
+ 
 
 }
