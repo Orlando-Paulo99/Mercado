@@ -1,5 +1,8 @@
 public class Produtos {
 
+
+ public String endereco;
+ public String loja;
  public String produto;
  public double quantidade;
  public double preco;
