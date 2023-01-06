@@ -17,10 +17,16 @@ public class Programa {
     System.out.println("Insira o preço do produto ");
     p1.preco=tec.nextDouble();
     
+    System.out.println("Informe o nome da loja: ");
+    p1.loja=tec.next();
+    
+    System.out.println("Informe o endereço :");
+    p1.endereco=tec.next();
    
     p1.setIn_cnpj(1222333778);
      
-    System.out.println("O produto: "+p1.produto +"\nA quantidade: "+p1.quantidade+"\nO preço individual é: "+p1.preco+"\nSeu CNPJ é:"+p1.getM_cnpj());
+    System.out.println("O nome da loja é: "+p1.loja+"\nAloja fica localizada em: "+p1.endereco+"\nO produto: "+p1.produto +"\nA quantidade: "+p1.quantidade+"\nO preço individual é: "+p1.preco+"\nSeu CNPJ é:"+p1.getM_cnpj());
+    
     
     System.out.println("Acrescentou quantos produtos?");
     int estoque=tec.nextInt();
