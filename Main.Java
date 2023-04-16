@@ -16,27 +16,28 @@ public class Main {
 		System.out.println("cpf:"+fun.getcpf());
 		
 		String [] mercadoria=new String[2];
-		double [] valorM=new double[2];
-				
+		
+		
 		produtos p=new produtos();
 		for (int i=0;  i<mercadoria.length;i++) {
-			System.out.println("digite o nome dos produtos"+i);
+			System.out.println("digite o nome dos produtos "+i);
 			mercadoria[i]=tec.next();
 			p.nome=mercadoria[i];
-			System.out.println("nome do priduto:"+p.nome);
+			System.out.println("nome do priduto: "+p.nome);
 			
 		}
+		double [] valorM=new double[2];
+		System.out.println(p.nome+":"+p.valor);
+		
 		for (int v=0;v<valorM.length;v++) {
-			System.out.println("digite o valor dos produtos"+v);
+			System.out.println("digite o valor dos produtos "+v);
 			valorM[v]=tec.nextDouble();
 			p.valor=valorM[v];
-			System.out.println(p.nome+":"+p.valor);
-			
-			
-			
 			
 		}
 		
+		System.out.println(p.nome+":"+p.valor);
+		System.out.println(valorM.toString());
 		
 		
 		
