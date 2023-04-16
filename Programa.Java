@@ -1,50 +1,45 @@
+package hello;
+
 import java.util.Scanner;
-import loja.Produtos;
 
-public class Programa {
+public class Main {
 
-  public static void main(String[] args) {
-    Scanner tec=new Scanner(System.in);
-    
-    Produtos p1=new Produtos();
-    
-    System.out.println("Nome do produto: ");
-    p1.produto=tec.next();
-    
-    System.out.println("Quantidade do produto");
-    p1.quantidade=tec.nextDouble();
-    
-    System.out.println("Insira o preço do produto ");
-    p1.preco=tec.nextDouble();
-    
-    System.out.println("Informe o nome da loja: ");
-    p1.loja=tec.next();
-    
-    System.out.println("Informe o endereço :");
-    p1.endereco=tec.next();
-   
-    p1.setIn_cnpj(1222333778);
-     
-    System.out.println("O nome da loja é: "+p1.loja+"\nAloja fica localizada em: "+p1.endereco+"\nO produto: "+p1.produto +"\nA quantidade: "+p1.quantidade+"\nO preço individual é: "+p1.preco+"\nSeu CNPJ é:"+p1.getM_cnpj());
-    
-    
-    System.out.println("Acrescentou quantos produtos?");
-    int estoque=tec.nextInt();
-    p1.addProdutos(estoque);
-    System.out.println("Atualização:"+p1.produto+"\nEstoque atual:"+p1.quantidade+"\nPreço:"+p1.preco);
-    
-    
-    System.out.println("vendeu quantos produto?");
-    estoque=tec.nextInt();
-    p1.removerProdutos(estoque);
-    
-    System.out.println("Foram vendidos: "+estoque + p1.produto);
-    
-    double sub=p1.quantidade-estoque;
-    
-    System.out.println("Restaram:"+sub);
-    
-
-  }
+	public static void main(String[] args) {
+		Scanner tec=new Scanner(System.in);
+		
+	
+		
+		Funcionario fun=new Funcionario("orlando","pedro braz",92624419,12356788);
+		System.out.println("bome:"+fun.getnome());
+		System.out.println("endereco:"+fun.getenderco());
+		System.out.println("telefone:"+fun.gettelefone());
+		System.out.println("cpf:"+fun.getcpf());
+		
+		String [] mercadoria=new String[2];
+		double [] valorM=new double[2];
+				
+		produtos p=new produtos();
+		for (int i=0;  i<mercadoria.length;i++) {
+			System.out.println("digite o nome dos produtos"+i);
+			mercadoria[i]=tec.next();
+			p.nome=mercadoria[i];
+			System.out.println("nome do priduto:"+p.nome);
+			
+		}
+		for (int v=0;v<valorM.length;v++) {
+			System.out.println("digite o valor dos produtos"+v);
+			valorM[v]=tec.nextDouble();
+			p.valor=valorM[v];
+			System.out.println(p.nome+":"+p.valor);
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+	}
 
 }
