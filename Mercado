@@ -1,0 +1,38 @@
+package hello;
+
+public abstract class Mercado {
+	
+	private String nome;
+	private String endereco;
+	private int telefone;
+	private int cpf;
+
+	
+	public  String getnome() {
+		return nome;
+	}
+	public void setnome9(String n) {
+		this.nome=n;
+	}
+	
+	public String getenderco() {
+		return endereco;
+	}
+	public void setendereco(String e) {
+		this.endereco=e;
+	}
+	
+	public int gettelefone() {
+		return telefone;
+	}
+	public void settelefone(int t) {
+		this.telefone=t;
+	}
+	
+	public int getcpf() {
+		return cnpj;
+	}
+	public void setcnpj(int c) {
+		this.cpf=c;
+	}
+}
