@@ -1,34 +1,9 @@
-public class Produtos {
+package hello;
 
-
- public String endereco;
- public String loja;
- public String produto;
- public double quantidade;
- public double preco;
- private int cnpj;
- 
- public void addProdutos (int estoque){
- 
-    this.quantidade+=estoque;
- 
-   
- }
- 
- public void removerProdutos(int estoque){
-   this.quantidade-=estoque;
- }
- 
- public int getM_cnpj(){
-   return this.cnpj;
- }
- 
- public void setIn_cnpj(int x){
-   this.cnpj=x;
-   
- }
- 
- 
- 
+public class produtos {
+	public String nome;
+	public double valor;
+	
+	
 
 }
